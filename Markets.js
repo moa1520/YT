@@ -48,23 +48,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "flex-start",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     flexWrap: "wrap",
     flexDirection: "row",
-    marginHorizontal: 25
+    marginHorizontal: 20
   },
   market: {
-    alignItems: "flex-start",
+    alignItems: "center",
     flexWrap: "wrap",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     width: 150,
     height: 180,
     marginBottom: 15
   },
   marketImg: {
-    width: 150,
-    height: 150,
-    borderRadius: 5,
+    width: "90%",
+    height: 120,
+    borderRadius: 10,
     borderColor: "black",
     borderWidth: 2,
     marginTop: 5

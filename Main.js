@@ -11,6 +11,8 @@ import {
 import Markets from "./Markets";
 import MarketDetail from "./MarketDetail";
 import { LinearGradient } from "expo-linear-gradient";
+import MyCalendar from "./MyCalendar";
+import SearchList from "./SearchList";
 
 const { height, width } = Dimensions.get("window");
 
@@ -22,9 +24,11 @@ class Main extends Component {
         <View style={styles.card}>
           <TextInput style={styles.input} placeholder={"Search"} />
           <ScrollView style={styles.scroll}>
+            <SearchList />
+            {/* <MyCalendar />
             <MarketDetail />
             <Text style={styles.marketTitle}>Today Festivals</Text>
-            <Markets />
+            <Markets /> */}
           </ScrollView>
         </View>
       </LinearGradient>
@@ -82,7 +86,6 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   scroll: {
-    marginTop: 10,
     width: width - 25
   },
   marketTitle: {

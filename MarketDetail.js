@@ -24,7 +24,9 @@ const MarketDetail = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20
+    padding: 20,
+    flexWrap: "wrap",
+    flexDirection: "column"
   },
   text: {
     fontSize: 25,
@@ -40,9 +42,9 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   image: {
-    width: 350,
-    height: 250,
-    borderRadius: 5,
+    width: "100%",
+    height: 300,
+    borderRadius: 10,
     borderColor: "black",
     borderWidth: 2,
     marginBottom: 10
